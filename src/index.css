@@ -118,7 +118,7 @@ section{
 
 /* delete btn */
 .btn.danger{
-  background: var(--color-grey-900);
+  background: var(--color-red);
   color: var(--color-white);
 }
 
@@ -215,3 +215,107 @@ footer{
   font-weight: 300;
   
 }
+
+
+/*===============HOME================ */
+/*===============Post.jsx =============== */
+ 
+.posts__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+/*===============PostItem.jsx =============== */
+.post {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.post__thumbnail {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10rem;
+}
+
+.post__content {
+  margin-top: 1rem; 
+}
+
+.post__content h4 {
+  margin: 1rem 0;
+  text-align: left;
+  color: var(--color-grey-900);
+}
+
+.post__content p {
+  text-align: justify;
+  margin: 1rem 0;
+  color: #666;
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/*=============== PostAuthor.jsx =============== */
+
+.post__author {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.post__author-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+/*=============== PostDetails.jsx =============== */
+.post-details{
+  width: var(--form-width);
+  background: var(--color-white);
+  margin-inline: auto;
+  padding: 2rem 0;
+
+}
+.post-details__header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.post-details__button{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.post-detail__thumbnail{
+  margin: 1rem 0;
+  max-height:30rem;
+  height: fit-content;
+  overflow: hidden;
+}
+.post-details p{
+  margin-bottom: 0.7rem;
+  text-align: justify;
+}
+/* post-detail__container
+post-details__header
+ */
