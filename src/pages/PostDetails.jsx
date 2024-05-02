@@ -1,7 +1,7 @@
 import React from 'react'
 import PostAuthor from '../components/PostAuthor'
 import { Link } from 'react-router-dom'
-import Thumbnail from '../images/blog30.jpg'
+import Thumbnail from '../images/blog3.jpg'
 
 const PostDetails = () => {
   return (
