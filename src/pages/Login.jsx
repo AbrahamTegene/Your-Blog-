@@ -26,7 +26,7 @@ const Login = () => {
           <input type="password" placeholder='password' name='password' value={userData.password} onChange={changeInputHandler} autoFocus/>
           <button type='submit' className='btn primary'>Login</button>
         </form>
-        <small>Don't have an account ? <Link to='/register'>Sign Up</Link> </small>
+        <small>Don't have an account yet? <Link to='/register'>Create your account</Link> </small>
       </div>
     </section>
   )

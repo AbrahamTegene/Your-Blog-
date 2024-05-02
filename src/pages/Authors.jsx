@@ -5,7 +5,7 @@ import Avater1 from '../images/avatar1.jpg'
 import Avater2 from '../images/avatar2.jpg'
 import Avater3 from '../images/avatar3.jpg'
 import Avater4 from '../images/avatar4.jpg'
-import Avater5 from '../images/avatar5.jpg'
+import Avater5 from '../images/avatar6.jpg'
 
 const authorsData =[
   {id:1, avatar:Avater1, name:'Afro Hikers Blogs', posts:3},
