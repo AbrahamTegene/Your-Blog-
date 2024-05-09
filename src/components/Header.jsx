@@ -19,15 +19,15 @@ const Header = () => {
   return (
     <nav>
         <div className="container nav_container">
-          <Link to={'/'} className='nav__logo'>
+          <Link to={'/'} className='nav__logo' onClick={closeNavHandler}>
             <img src={logo} alt="" />
           </Link>
-          <ul className="nav__menu">
-            <li> <Link to='/profile/sdfsdf'>Profile</Link></li>
-            <li> <Link to='/Create'>Create Post</Link></li>
-            <li> <Link to='/authors'>Authors</Link></li>
-            <li> <Link to='/logout'>Logout</Link></li>
-          </ul>
+          {isNewShowing && <ul className="nav__menu">
+            <li> <Link to='/profile/sdfsdf' onClick={closeNavHandler}>Profile</Link></li>
+            <li> <Link to='/Create' onClick={closeNavHandler}>Create Post</Link></li>
+            <li> <Link to='/authors' onClick={closeNavHandler}>Authors</Link></li>
+            <li> <Link to='/logout' onClick={closeNavHandler}>Logout</Link></li>
+          </ul>}
           <button className="nav__toggle-btn" onClick={() => setIsNewShowing(!isNewShowing)}>
             {isNewShowing ? < AiOutlineClose/> : <FaBars/>}
           </button>
